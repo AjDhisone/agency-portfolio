@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedMark</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <style>
+        @keyframes scroll-horizontal {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body class="bg-[#0D0D0D] text-white overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-30 border-b border-white/20 bg-black/50 backdrop-blur-lg">
+        <div class="flex items-center justify-between max-w-6xl mx-auto p-3 px-5 md:p-4 md:px-8">
+            <div class="flex items-center gap-3">
+                <img src="photos/Medmark logo.JPG" alt="Logo" class="h-10 w-10 rounded-full object-cover md:h-12 md:w-12">
+                <span class="text-xl font-bold text-[#FFD700] md:text-2xl">MedMark</span>
+            </div>
+            <ul class="list-none">
+                <li>
+                    <a href="tel:+918754311720" 
+                       class="rounded-md border-2 border-[#00F5FF] bg-[#00F5FF] px-3 py-2 text-sm text-black transition-colors duration-300 hover:bg-transparent hover:text-[#00F5FF] md:px-4 md:py-2 md:text-base">
+                        Call Now
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="grid w-full grid-cols-1 pt-[64px] md:grid-cols-2 md:pt-[80px]">
+        <video src="videos/herovid1.mp4" autoplay muted loop playsinline class="w-full h-auto"></video>
+        <video src="videos/herovid2.mp4" autoplay muted loop playsinline class="w-full h-auto hidden md:block"></video>
+    </section>
+
+    <!-- Scrolling Text -->
+    <section class="bg-black py-8 md:py-12">
+        <div class="relative w-full overflow-hidden">
+            <div class="absolute top-0 bottom-0 left-0 z-10 w-16 md:w-24 bg-gradient-to-r from-black to-transparent"></div>
+            
+            <div class="flex whitespace-nowrap animate-[scroll-horizontal_20s_linear_infinite]">
+                <div class="flex items-center">
+                    <span class="mx-8 md:mx-12 text-2xl md:text-3xl font-semibold text-white">VIDEO EDITING</span>
+                    <span class="mx-8 md:mx-12 text-2xl md:text-3xl font-semibold text-white">POSTER DESIGNING</span>
+                    <span class="mx-8 md:mx-12 text-2xl md:text-3xl font-semibold text-white">LOGO DESIGNING</span>
+                    <span class="mx-8 md:mx-12 text-2xl md:text-3xl font-semibold text-white">MARKETING</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="mx-8 md:mx-12 text-2xl md:text-3xl font-semibold text-white">VIDEO EDITING</span>
+                    <span class="mx-8 md:mx-12 text-2xl md:text-3xl font-semibold text-white">POSTER DESIGNING</span>
+                    <span class="mx-8 md:mx-12 text-2xl md:text-3xl font-semibold text-white">LOGO DESIGNING</span>
+                    <span class="mx-8 md:mx-12 text-2xl md:text-3xl font-semibold text-white">MARKETING</span>
+                </div>
+            </div>
+
+            <div class="absolute top-0 bottom-0 right-0 z-10 w-16 md:w-24 bg-gradient-to-l from-black to-transparent"></div>
+        </div>
+    </section>
+    
+    <!-- Poster -->
+    <section class="w-full aspect-[16/9] bg-black">
+        <img src="photos/Heroposter.jpg" alt="Promotional Poster" class="w-full h-full object-cover">
+    </section>
+
+    <!-- About Section (Fade animation) -->
+    <section class="w-full bg-black py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-5 md:px-8 flex flex-col items-center text-center" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FFD700] mb-6 md:mb-8">
+                About MedMark
+            </h2>
+            <p class="max-w-3xl text-base md:text-lg text-neutral-300 leading-relaxed">
+                MedMark is a premier digital creative agency dedicated to elevating the presence of doctors and medical professionals. In today's digital age, a strong online brand is crucial. We specialize in creating compelling content that captures attention and builds trust. From professional video editing and eye-catching poster design to strategic marketing and iconic logo creation, we provide all the tools you need to stand out. Let us handle the creative work, so you can focus on what you do best: caring for patients.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bg-black py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-5 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div class="w-full aspect-video" data-aos="fade-right" data-aos-duration="1000">
+                <video src="videos\beforeAfter vid.mp4" autoplay muted loop playsinline class="w-full h-full object-cover rounded-lg shadow-lg"></video>
+            </div>
+
+            <div class="flex flex-col justify-center" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#FFD700] mb-4">
+                    From Concept to Creation, We Handle Everything
+                </h2>
+                <p class="text-lg text-neutral-300 leading-relaxed mb-6">
+                    You're busy. We get it. That's why we offer a complete, hassle-free video production service tailored for medical professionals. Our team comes to your location, manages the entire shoot, and delivers a polished final product ready to captivate your audience.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-4">
+                        <svg class="w-6 h-6 text-[#00F5FF] flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <div>
+                            <h3 class="font-semibold text-white">On-Site Filming</h3>
+                            <p class="text-neutral-400">We bring professional equipment and a skilled crew to your clinic or hospital, ensuring high-quality footage with minimal disruption to your schedule.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <svg class="w-6 h-6 text-[#00F5FF] flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <div>
+                            <h3 class="font-semibold text-white">Expert Post-Production</h3>
+                            <p class="text-neutral-400">Our editors craft your story with precision, adding graphics, music, and professional color grading to make your video stand out.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-black py-16 md:py-24" id="contact">
+        <div class="max-w-4xl mx-auto px-5 md:px-8 text-center" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#FFD700] mb-6">Get in Touch</h2>
+            <p class="text-neutral-300 mb-8">Have questions or want to work with us? Fill out the form below or reach us directly on WhatsApp.</p>
+            
+            <form action="https://api.web3forms.com/submit" method="POST" class="grid grid-cols-1 gap-4 max-w-xl mx-auto">
+                <input type="hidden" name="access_key" value="a6772203-d615-42ed-904b-3a35c7c62877">
+                <input type="text" name="name" placeholder="Your Name" required class="p-3 rounded bg-neutral-900 border border-neutral-700 text-white">
+                <input type="email" name="email" placeholder="Your Email" required class="p-3 rounded bg-neutral-900 border border-neutral-700 text-white">
+                <textarea name="message" rows="4" placeholder="Your Message" required class="p-3 rounded bg-neutral-900 border border-neutral-700 text-white"></textarea>
+                <button type="submit" class="bg-[#FFD700] text-black font-semibold py-3 rounded hover:bg-transparent hover:text-[#FFD700] border border-[#FFD700] transition">Send Message</button>
+            </form>
+
+            <a href="https://wa.me/918754311720" target="_blank" class="inline-block mt-6 bg-[#00F5FF] text-black font-semibold py-3 px-6 rounded hover:bg-transparent hover:text-[#00F5FF] border border-[#00F5FF] transition">
+                Chat Now on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-white/20 py-6 text-center text-neutral-400 text-sm">
+        <p>© 2025 MedMark. Developed by 
+            <a href="https://www.linkedin.com/in/ajay-dhisone-134266258/" target="_blank" class="text-[#FFD700] hover:underline">
+                Ajay Disone
+            </a>.
+        </p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
